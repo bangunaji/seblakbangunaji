@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header id="home">
+        <nav" class="navbar">
+            <div class="logo">
+                <img src="images/ogol.png" alt="logo" style="width: 200px; height: 200px;">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><b> HOME</b></a></li>
+                <li><a href="#menu"><b>MENU</b></a></li>
+                <li><a href="#about"><b>ABOUT</b></a></li>
+                <li><a href="#contact"><b>CONTACT</b></a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Makanan <span style="color: red;">Favorit</span></h1>
+            <h1 style="line-height: 1em;">The Nurul's</h1>
+            <p style="font-family: Arial, Helvetica, sans-serif;">Seblak ceker setan, rasa kesurupan, siapa berani coba?
+                <br> Yuk rasakan sensasinya di seblak mega jeder.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="images/seblak.jpg" alt="Produk Unggulan">
+        </div>
+    </section>
+
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>MENU</h2>
+        <p style="text-align: center;">Paket Hemat Paling Laris</p>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <img src="images/bakso.jpg" alt="Menu Item 2">
+                <p>Mie Bakso Bleduk</p>
+                <button class="buy-button"><b>Harga 10k</b></button>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/seblak1.jpg" alt="Menu Item 2">
+                <p>Seblak Jeder</p>
+                <button class="buy-button"><b>Harga 12k</b></button>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/ayam-geprek.jpg" alt="Menu Item 2">
+                <p>Ayam Geprek</p>
+                <button class="buy-button"><b>Harga 10k</b></button>
+            </div>
+
+            <div class="menu-card">
+                <img src="images/ikan-bakar.jpg" alt="Menu Item 2">
+                <p>Ikan Bakar</p>
+                <button class="buy-button"><b>Harga 15k</b></button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>ABOUT MEGA JEDER</h2>
+        <p style=" width: 400px; height: 200px; margin-left: 300px;">
+            Mega jeder menawarkan kuliner pedas dengan rasa yang menggugah, kami menggunakan sambal spesial untuk
+            menciptakan sensasi pedas kesurupan yang selalu membuat ketagihan. Rasakan nikmat pedasnya hanya di Mega
+            Jeder.
+            Kenikmatan pedasnya bukan hanya sekedar rasa, tetapi juga pengalaman penuh sensasi yang membuat ketagihan
+            untuk kembali, setiap rasa pedas autentik dan tak terlupakan.
+        </p>
+        <img src="images/halaman.jpg" alt="halaman"
+            style="width: 300px; height: 300px; margin-top: -230px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  float: right; margin-right: 200px; border-radius: 20px;">
+
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="location">
+            <h3>OUR LOCATION</h3>
+            <p>Jl. Surikah, Purwodadi, Kec. Trimurjo, Kab. Lampung Tengah</p>
+        </div>
+
+        <!-- Google Maps Embed -->
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.9639580833327!2d105.28388357401015!3d-5.109511451755008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e40bb55366e7657%3A0x9e1064439ecfe2a6!2sAyam%20Geprek%20Mega!5e0!3m2!1sid!2sid!4v1731493069249!5m2!1sid!2sid"
+                width="100%" height="300px" style="border-radius: 20px;  filter: grayscale(100%);" allowfullscreen=""
+                loading="lazy">></iframe>
+        </div>
+
+        <div class="contact-info">
+            <h3>CONTACT</h3>
+            <p><i class="fab fa-instagram" style="margin-right: 10px;"></i>Instagram: @proyek.it_mj | <i
+                    class="fab fa-whatsapp" style="margin-right: 10px;"></i>WhatsApp:
+                0823-5946-4221</p>
+        </div>
+
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
